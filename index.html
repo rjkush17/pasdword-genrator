@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/1d27b3341b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Generate a Random Password</h1>
+
+      <div class="card">
+        <div class="card-header input-group">
+          <input type="text" class="password" value="" disabled />
+          <button class="button close-button" ><i class="fa-regular fa-copy"></i></button>
+        </div>
+        <div class="cardbody">
+          <div class="label-wapper">
+            <label for="password" class="checkbox-label">PassWord Length</label>
+            <input
+              type="number"
+              id="password"
+              class="password-input"
+            />
+          </div>
+
+          <div class="label-wapper">
+            <label for="uppercase" class="checkbox-label"
+              >Include Uppercase Letters</label
+            >
+            <input type="checkbox" id="uppercase" class="checkbox" />
+          </div>
+          <div class="label-wapper">
+            <label for="lowercase" class="checkbox-label"
+              >Include Lowercase Letters</label
+            >
+            <input type="checkbox" id="lowercase" class="checkbox" />
+          </div>
+          <div class="label-wapper">
+            <label for="numbers" class="checkbox-label">Include Numbers</label>
+            <input type="checkbox" id="numbers" class="checkbox" />
+          </div>
+          <div class="label-wapper">
+            <label for="symbols" class="checkbox-label">Include Symbols</label>
+            <input type="checkbox" id="symbols" class="checkbox" />
+          </div>
+        </div>
+      </div>
+
+      <button onclick="createpassword()" class="generate-button">
+        <span>Generate Password</span>
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>
